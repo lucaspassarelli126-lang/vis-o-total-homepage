@@ -27,9 +27,11 @@ const ProductCard = ({ brand, name, originalPrice, discountedPrice, discount, sh
         {/* Badges */}
         <div className="absolute top-2 left-2 flex flex-col gap-1">
           <span className="bg-pix text-pix-foreground text-[10px] font-bold px-2 py-0.5 rounded">5% OFF PIX</span>
-          <span className="bg-primary text-primary-foreground text-[10px] font-bold px-2 py-0.5 rounded">-{discount}%</span>
+          {discount > 0 && (
+            <span className="bg-primary text-primary-foreground text-[10px] font-bold px-2 py-0.5 rounded">-{discount}%</span>
+          )}
           {showOriginalBadge && (
-            <span className="bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">100% ORIGINAL</span>
+            <span className="text-primary-foreground text-[10px] font-bold px-2 py-0.5 rounded" style={{ backgroundColor: "hsl(220, 60%, 50%)" }}>100% ORIGINAL</span>
           )}
         </div>
       </div>
