@@ -25,7 +25,7 @@ const ContactLensesSection = () => (
           </a>
         ))}
       </div>
-      <div className="rounded-lg p-8 text-center" style={{ background: "linear-gradient(135deg, hsl(200,50%,50%), hsl(220,60%,40%))" }}>
+      <div className="rounded-lg p-8 text-center" style={{ background: "linear-gradient(135deg, hsl(225 73% 57%), hsl(225 73% 30%))" }}>
         <h3 className="text-white text-xl font-bold mb-3">Encontre a lente perfeita para você</h3>
         <Button className="bg-white text-foreground hover:bg-white/90 font-bold">
           Ver Todas as Lentes
