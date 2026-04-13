@@ -14,7 +14,7 @@ const ContactLensesSection = () => (
       <h2 className="text-xl font-bold tracking-widest uppercase text-foreground mb-8 text-center">
         Lentes de Contato
       </h2>
-      <div className="grid grid-cols-5 gap-4 mb-8">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-8">
         {lenses.map((l) => (
           <a key={l.name} href="#" className="group">
             <div

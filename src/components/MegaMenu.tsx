@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
-type MenuColumn = { title: string; items: string[] };
-type MenuItem = { label: string; columns: MenuColumn[] };
+export type MenuColumn = { title: string; items: string[] };
+export type MenuItem = { label: string; columns: MenuColumn[] };
 
-const menuData: MenuItem[] = [
+export const menuData: MenuItem[] = [
   {
     label: "Armações",
     columns: [
@@ -58,7 +58,7 @@ const MegaMenu = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
-    <nav className="bg-background border-b border-border relative z-50">
+    <nav className="bg-background border-b border-border relative z-50 hidden lg:block">
       <div className="container mx-auto px-4 max-w-7xl">
         <ul className="flex items-center justify-center gap-1">
           {menuData.map((item, i) => (

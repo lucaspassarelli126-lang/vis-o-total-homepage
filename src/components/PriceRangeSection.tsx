@@ -12,7 +12,7 @@ const PriceRangeSection = () => (
       <h2 className="text-xl font-bold tracking-widest uppercase text-foreground mb-8 text-center">
         Navegue por faixas de preço
       </h2>
-      <div className="grid grid-cols-5 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
         {ranges.map((r) => (
           <a
             key={r.label}

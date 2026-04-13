@@ -1,7 +1,7 @@
 const Footer = () => (
   <footer className="bg-footer text-footer-foreground">
     <div className="container mx-auto px-4 max-w-7xl py-12">
-      <div className="grid grid-cols-4 gap-8 mb-10">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
         <div>
           <h4 className="font-bold text-white text-sm mb-4">Institucional</h4>
           <ul className="space-y-2 text-sm">
@@ -40,7 +40,7 @@ const Footer = () => (
       </div>
 
       {/* Social */}
-      <div className="flex items-center justify-center gap-6 mb-6 text-sm">
+      <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 mb-6 text-sm">
         {["Instagram", "Facebook", "TikTok", "LinkedIn", "YouTube"].map((s) => (
           <a key={s} href="#" className="hover:text-white transition-colors">{s}</a>
         ))}
