@@ -1,16 +1,16 @@
 import { Button } from "@/components/ui/button";
 
 const HeroBanner = () => (
-  <section className="relative w-full overflow-hidden" style={{ background: "linear-gradient(135deg, hsl(225 73% 57%), hsl(225 73% 40%))" }}>
-    <div className="container mx-auto px-4 max-w-7xl py-20 flex flex-col items-center text-center text-primary-foreground">
-      <span className="text-sm font-medium tracking-widest uppercase mb-2 opacity-80">Promoção Especial</span>
-      <h1 className="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">Até 30% OFF</h1>
-      <p className="text-lg md:text-xl mb-8 opacity-90 max-w-xl">
-        Armações e óculos de sol das melhores marcas com descontos imperdíveis.
-      </p>
-      <Button size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-bold text-base px-8">
-        Aproveitar Oferta
-      </Button>
+  <section 
+    className="relative w-full overflow-hidden bg-cover bg-center py-20 md:py-40 flex items-center"
+    style={{ backgroundImage: "url('/hero-banner.png')" }}
+  >
+    <div className="container mx-auto px-4 max-w-7xl flex justify-center md:justify-end">
+      <div className="md:mr-12">
+        <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-extrabold text-lg px-12 h-14 rounded-full shadow-2xl transition-all hover:scale-105">
+          Ver Produtos
+        </Button>
+      </div>
     </div>
   </section>
 );
